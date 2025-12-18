@@ -11,23 +11,85 @@
 
 <body>
     <header>
-        <span class="ui-header-logo">e7tdev</span>
+        <span class="ui-header-logo"><b>e7tdev</b></span>
         <span class="ui-header-splitter">//</span>
         <nav class="ui-header-nav">
             <!-- todo: сделать разделы сайта, чтобы найти этим кнопкам применение -->
-            <a href="#">услуги</a>
-            <a href="#">проекты</a>
+            <a href="#services">услуги</a>
+            <a href="#examples">работы</a>
         </nav>
     </header>
+
     <main>
         <section class="ui-profile-container">
-            <h1>Роман "e7tdev" Калинин</h1>
-            <p>
-                Занимаюсь <b>full-stack</b> разработкой на заказ, <b>backend-разработкой</b> с использованием FastAPI и SQLAlchemy,
-                созданием Telegram-ботов и вебсайтов
+            <h1 class="ui-profile-title">Роман "e7tdev" Калинин</h1>
+            <p class="ui-profile-subtitle">
+                Занимаюсь <b>full-stack</b> разработкой на заказ, <b>backend-разработкой</b> с использованием FastAPI и
+                SQLAlchemy,
+                созданием Telegram-ботов и веб-сайтов
             </p>
         </section>
+
+        <section class="ui-section ui-gradient-fadeout">
+            <h2 class="ui-section-title" id="services">услуги</h2>
+            <article>
+                <p>Все, что я могу для вас сделать. Цены формируются по договору, в зависимости от сложности задачи.</p>
+                <ul class="ui-section-list">
+                    <li>
+                        <h3>full-stack</h3>
+                        <p>Разработка, тестирование и развертывание frontend и backend на основе Flask и FastAPI для
+                            вашего проекта</p>
+                        <p>Цена: от 10000₽</p>
+                    </li>
+                    <li>
+                        <h3>backend</h3>
+                        <p>Разработка backend на FastAPI по вашему заказу</p>
+                        <p>Цена: от 5000₽</p>
+                    </li>
+                    <li>
+                        <h3>telegram</h3>
+                        <p>Создание и тестирование Telegram-бота на основе aiogram для вас</p>
+                        <p>Цена: от 1000₽</p>
+                    </li>
+                    <li>
+                        <h3>web</h3>
+                        <p>Создание оптимизированного веб-сайта с SEO</p>
+                        <p>Цена: от 700₽</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="ui-section ui-gradient-fadein">
+            <h2 class="ui-section-title" id="examples">работы</h2>
+            <p>Примеры того, что я могу для вас создать</p>
+            <article>
+                <ul class="ui-section-list">
+                    <li><b>Fanhouse</b> (backend) - социальная платформа для участников фандомов и фанатов различных
+                        медиа</li>
+                    <li><b>lystn</b> (backend) - платформа для слушателей музыки и аудиоскробблер с открытым API для
+                        разработчиков</li>
+                    <li><b>eldritcht.ru</b> (web) - персональный веб-сайт
+                        <div class="ui-section-images">
+                            <img src="/img/example1.png" alt="Пример работы: eldritcht.ru">
+                        </div>
+                    </li>
+                    <li><b>UrbanDictionaryBot</b> (telegram) - Telegram-бот для получения информации об англоязычных
+                        сленговых терминах с ресурса urbandictionary.com
+                        <div class="ui-section-images">
+                            <img src="/img/example2.png" alt="Пример работы: UrbanDictionaryBot">
+                        </div>
+                    </li>
+                    <li><b>e7tdev</b> (web) - вы находитесь здесь</li>
+                </ul>
+            </article>
+        </section>
     </main>
+
+    <footer class="ui-footer">
+        <p><b>(c) e7tdev, 2025</b></p>
+        <p>(this website is just an example and not a real offer of services)</p>
+    </footer>
 </body>
 
 </html>
